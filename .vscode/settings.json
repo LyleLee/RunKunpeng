@@ -1,0 +1,6 @@
+{
+    "restructuredtext.confPath": "${workspaceFolder}\\source",
+    "restructuredtext.builtDocumentationPath": "${workspaceFolder}\\build\\html",
+    "restructuredtext.updateOnTextChanged": "true",
+    "restructuredtext.updateDelay": 1000,
+}

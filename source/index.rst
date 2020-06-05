@@ -8,11 +8,19 @@ Welcome to RunKunpeng's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: 软件列表:
+   :numbered:
    :glob:
 
-   *
+   apps/*
 
+.. toctree::
+   :maxdepth: 2
+   :caption: 你可能想要知道:
+   :numbered:
+   :glob:
+
+   wiki/*
 
 
 Indices and tables
