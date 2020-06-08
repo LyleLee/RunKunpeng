@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2. Kubernetes &mdash; RunKunpeng 0.0.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="1. 如何参与贡献" href="../wiki/contribute.html" />
+    <link rel="prev" title="1. Apache Hadoop" href="hadoop.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> RunKunpeng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">软件列表:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="hadoop.html">1. Apache Hadoop</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Kubernetes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#runby-lyle">2.1. RunBy: Lyle</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">2.1.1. 安装部署集群</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">2.1.2. 问题记录</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#running-with-swap-on-is-not-supported-please-disable-swap">2.1.2.1. running with swap on is not supported. Please disable swap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#warning-kubeadm-cannot-validate-component-configs-for-api-group">2.1.2.2. WARNING: kubeadm cannot validate component configs for API group</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#public-key-for-is-not-installed">2.1.2.3. Public key for is not installed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#failed-to-set-locale-defaulting-to-c-utf-8-in-centos-8">2.1.2.4. Failed to set locale, defaulting to C.UTF-8” in CentOS 8</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">你可能想要知道:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../wiki/contribute.html">1. 如何参与贡献</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">RunKunpeng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>2. Kubernetes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/apps/kubenetes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="kubernetes">
+<h1>2. Kubernetes<a class="headerlink" href="#kubernetes" title="永久链接至标题">¶</a></h1>
+<p>The Kubernetes</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body">kubenetes, k8s</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Website:</th><td class="field-body"><a class="reference external" href="https://kubernetes.io/">https://kubernetes.io/</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Project:</th><td class="field-body">Github <a class="reference external" href="https://github.com/kubernetes">https://github.com/kubernetes</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body">Apache License 2.0</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<div class="section" id="runby-lyle">
+<h2>2.1. RunBy: Lyle<a class="headerlink" href="#runby-lyle" title="永久链接至标题">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Run version:</th><td class="field-body">1.18.3, 1.14.0</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Pass:</th><td class="field-body">Yes</td>
+</tr>
+</tbody>
+</table>
+<p>如果是和 minikube 一起使用的话，只需要下载client端就可以了。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">OL</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dl</span><span class="o">.</span><span class="n">k8s</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">v1</span><span class="o">.</span><span class="mf">18.0</span><span class="o">/</span><span class="n">kubernetes</span><span class="o">-</span><span class="n">client</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">arm64</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+</pre></div>
+</div>
+<div class="section" id="id1">
+<h3>2.1.1. 安装部署集群<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>添加kubernetes软件源</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">s</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">packages</span><span class="o">.</span><span class="n">cloud</span><span class="o">.</span><span class="n">google</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">doc</span><span class="o">/</span><span class="n">apt</span><span class="o">-</span><span class="n">key</span><span class="o">.</span><span class="n">gpg</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">key</span> <span class="n">add</span> <span class="o">-</span>
+<span class="n">cat</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">tee</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">sources</span><span class="o">.</span><span class="n">list</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">list</span>
+<span class="n">deb</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">apt</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span> <span class="n">kubernetes</span><span class="o">-</span><span class="n">xenial</span> <span class="n">main</span>
+<span class="n">EOF</span>
+</pre></div>
+</div>
+<p>检查所需的镜像是否能获得</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>kubeadm config images pull
+
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+</pre></div>
+</div>
+<p>安装网络插件</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">kubeadm</span> <span class="n">init</span>
+<span class="n">kubectl</span> <span class="n">apply</span> <span class="o">-</span><span class="n">f</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">docs</span><span class="o">.</span><span class="n">projectcalico</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">v3</span><span class="o">.</span><span class="mi">11</span><span class="o">/</span><span class="n">manifests</span><span class="o">/</span><span class="n">calico</span><span class="o">.</span><span class="n">yaml</span>
+
+<span class="n">kubectl</span> <span class="n">get</span> <span class="n">nodes</span> <span class="c1">#确认master ready</span>
+
+<span class="n">kubeadm</span> <span class="n">token</span> <span class="n">create</span> <span class="o">--</span><span class="nb">print</span><span class="o">-</span><span class="n">join</span><span class="o">-</span><span class="n">command</span>
+</pre></div>
+</div>
+<p>workder</p>
+<p>加载br_netfilter</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lsmod</span> <span class="o">|</span> <span class="n">grep</span> <span class="n">br_netfilter</span>
+<span class="n">sudo</span> <span class="n">modprobe</span> <span class="n">br_netfilter</span>
+</pre></div>
+</div>
+<p>设置操作系统参数，br_netfilter没有加载的话时没有这两个变量的</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">tee</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">sysctl</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">k8s</span><span class="o">.</span><span class="n">conf</span>
+<span class="n">net</span><span class="o">.</span><span class="n">bridge</span><span class="o">.</span><span class="n">bridge</span><span class="o">-</span><span class="n">nf</span><span class="o">-</span><span class="n">call</span><span class="o">-</span><span class="n">ip6tables</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">net</span><span class="o">.</span><span class="n">bridge</span><span class="o">.</span><span class="n">bridge</span><span class="o">-</span><span class="n">nf</span><span class="o">-</span><span class="n">call</span><span class="o">-</span><span class="n">iptables</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">EOF</span>
+<span class="n">sudo</span> <span class="n">sysctl</span> <span class="o">--</span><span class="n">system</span>    <span class="c1"># 应用到系统</span>
+</pre></div>
+</div>
+<p>添加kubernetes软件源</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">s</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">packages</span><span class="o">.</span><span class="n">cloud</span><span class="o">.</span><span class="n">google</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">doc</span><span class="o">/</span><span class="n">apt</span><span class="o">-</span><span class="n">key</span><span class="o">.</span><span class="n">gpg</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">key</span> <span class="n">add</span> <span class="o">-</span>
+<span class="n">cat</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">tee</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">sources</span><span class="o">.</span><span class="n">list</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">list</span>
+<span class="n">deb</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">apt</span><span class="o">.</span><span class="n">kubernetes</span><span class="o">.</span><span class="n">io</span><span class="o">/</span> <span class="n">kubernetes</span><span class="o">-</span><span class="n">xenial</span> <span class="n">main</span>
+<span class="n">EOF</span>
+</pre></div>
+</div>
+<p>加入集群</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">kubeadm</span> <span class="n">join</span> <span class="mf">192.168</span><span class="o">.</span><span class="mf">1.180</span><span class="p">:</span><span class="mi">6443</span> <span class="o">--</span><span class="n">token</span> <span class="n">yzep8d</span><span class="o">.</span><span class="mi">7</span><span class="n">svs6hvljrhqk562</span> \
+    <span class="o">--</span><span class="n">discovery</span><span class="o">-</span><span class="n">token</span><span class="o">-</span><span class="n">ca</span><span class="o">-</span><span class="n">cert</span><span class="o">-</span><span class="nb">hash</span> <span class="n">sha256</span><span class="p">:</span><span class="mf">83e29</span><span class="n">e1b29c1a11cdcb067c5da9ae58d9e11c2c15dfaa092f5b0ce3aa625b0f9</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h3>2.1.2. 问题记录<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<div class="section" id="running-with-swap-on-is-not-supported-please-disable-swap">
+<h4>2.1.2.1. running with swap on is not supported. Please disable swap<a class="headerlink" href="#running-with-swap-on-is-not-supported-please-disable-swap" title="永久链接至标题">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>user1@Arm64-server:~$ sudo kubeadm init --pod-network-cidr=10.244.0.0/16
+I0510 21:10:40.951053   25602 version.go:240] remote version is much newer: v1.18.2; falling back to: stable-1.14
+[init] Using Kubernetes version: v1.14.10
+[preflight] Running pre-flight checks
+        [WARNING IsDockerSystemdCheck]: detected &quot;cgroupfs&quot; as the Docker cgroup driver. The recommended driver is &quot;systemd&quot;. Please follow the guide at https://kubernetes.io/docs/setup/cri/
+        [WARNING SystemVerification]: this Docker version is not on the list of validated versions: 19.03.8. Latest validated version: 18.09
+error execution phase preflight: [preflight] Some fatal errors occurred:
+        [ERROR Swap]: running with swap on is not supported. Please disable swap
+[preflight] If you know what you are doing, you can make a check non-fatal with `--ignore-preflight-errors=...`
+</pre></div>
+</div>
+<p>解决办法</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">swapoff</span> <span class="o">-</span><span class="n">a</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="warning-kubeadm-cannot-validate-component-configs-for-api-group">
+<h4>2.1.2.2. WARNING: kubeadm cannot validate component configs for API group<a class="headerlink" href="#warning-kubeadm-cannot-validate-component-configs-for-api-group" title="永久链接至标题">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>user1@Arm64-server:~$ kubeadm config images pull
+W0511 23:20:25.155396   59650 configset.go:202] WARNING: kubeadm cannot validate component configs for API groups [kubelet.config.k8s.io kubeproxy.config.k8s.io]
+[config/images] Pulled k8s.gcr.io/kube-apiserver:v1.18.2
+[config/images] Pulled k8s.gcr.io/kube-controller-manager:v1.18.2
+[config/images] Pulled k8s.gcr.io/kube-scheduler:v1.18.2
+[config/images] Pulled k8s.gcr.io/kube-proxy:v1.18.2
+[config/images] Pulled k8s.gcr.io/pause:3.2
+[config/images] Pulled k8s.gcr.io/etcd:3.4.3-0
+[config/images] Pulled k8s.gcr.io/coredns:1.6.7
+</pre></div>
+</div>
+</div>
+<div class="section" id="public-key-for-is-not-installed">
+<h4>2.1.2.3. Public key for is not installed<a class="headerlink" href="#public-key-for-is-not-installed" title="永久链接至标题">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Public</span> <span class="n">key</span> <span class="k">for</span> <span class="n">fdd1728b8dd0026e64a99ebb87d5b7a6c026a8e2f4796e383cc7ac43e7d7ccf2</span><span class="o">-</span><span class="n">kubelet</span><span class="o">-</span><span class="mf">1.18</span><span class="o">.</span><span class="mi">2</span><span class="o">-</span><span class="mf">0.</span><span class="n">aarch64</span><span class="o">.</span><span class="n">rpm</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">installed</span>
+<span class="n">Public</span> <span class="n">key</span> <span class="k">for</span> <span class="mi">98</span><span class="n">b57cf856484f0d15a58705136d9319e57c5b80bea2eea93cf02bb2365651dc</span><span class="o">-</span><span class="n">kubernetes</span><span class="o">-</span><span class="n">cni</span><span class="o">-</span><span class="mf">0.7</span><span class="o">.</span><span class="mi">5</span><span class="o">-</span><span class="mf">0.</span><span class="n">aarch64</span><span class="o">.</span><span class="n">rpm</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">installed</span>
+<span class="n">Public</span> <span class="n">key</span> <span class="k">for</span> <span class="n">socat</span><span class="o">-</span><span class="mf">1.7</span><span class="o">.</span><span class="mf">3.2</span><span class="o">-</span><span class="mf">6.</span><span class="n">el8</span><span class="o">.</span><span class="n">aarch64</span><span class="o">.</span><span class="n">rpm</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">installed</span><span class="o">.</span> <span class="n">Failing</span> <span class="n">package</span> <span class="ow">is</span><span class="p">:</span> <span class="n">socat</span><span class="o">-</span><span class="mf">1.7</span><span class="o">.</span><span class="mf">3.2</span><span class="o">-</span><span class="mf">6.</span><span class="n">el8</span><span class="o">.</span><span class="n">aarch64</span>
+<span class="n">GPG</span> <span class="n">Keys</span> <span class="n">are</span> <span class="n">configured</span> <span class="k">as</span><span class="p">:</span> <span class="n">file</span><span class="p">:</span><span class="o">///</span><span class="n">etc</span><span class="o">/</span><span class="n">pki</span><span class="o">/</span><span class="n">rpm</span><span class="o">-</span><span class="n">gpg</span><span class="o">/</span><span class="n">RPM</span><span class="o">-</span><span class="n">GPG</span><span class="o">-</span><span class="n">KEY</span><span class="o">-</span><span class="n">centosofficial</span>
+<span class="n">Public</span> <span class="n">key</span> <span class="k">for</span> <span class="n">conntrack</span><span class="o">-</span><span class="n">tools</span><span class="o">-</span><span class="mf">1.4</span><span class="o">.</span><span class="mi">4</span><span class="o">-</span><span class="mf">9.</span><span class="n">el8</span><span class="o">.</span><span class="n">aarch64</span><span class="o">.</span><span class="n">rpm</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">installed</span><span class="o">.</span> <span class="n">Failing</span> <span class="n">package</span> <span class="ow">is</span><span class="p">:</span> <span class="n">conntrack</span><span class="o">-</span><span class="n">tools</span><span class="o">-</span><span class="mf">1.4</span><span class="o">.</span><span class="mi">4</span><span class="o">-</span><span class="mf">9.</span><span class="n">el8</span><span class="o">.</span><span class="n">aarch64</span>
+<span class="n">GPG</span> <span class="n">Keys</span> <span class="n">are</span> <span class="n">configured</span> <span class="k">as</span><span class="p">:</span> <span class="n">file</span><span class="p">:</span><span class="o">///</span><span class="n">etc</span><span class="o">/</span><span class="n">pki</span><span class="o">/</span><span class="n">rpm</span><span class="o">-</span><span class="n">gpg</span><span class="o">/</span><span class="n">RPM</span><span class="o">-</span><span class="n">GPG</span><span class="o">-</span><span class="n">KEY</span><span class="o">-</span><span class="n">centosofficial</span>
+<span class="n">Public</span> <span class="n">key</span> <span class="k">for</span> <span class="n">iptables</span><span class="o">-</span><span class="mf">1.8</span><span class="o">.</span><span class="mi">2</span><span class="o">-</span><span class="mf">16.</span><span class="n">el8</span><span class="o">.</span><span class="n">aarch64</span><span class="o">.</span><span class="n">rpm</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">installed</span><span class="o">.</span> <span class="n">Failing</span> <span class="n">packa</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="failed-to-set-locale-defaulting-to-c-utf-8-in-centos-8">
+<h4>2.1.2.4. Failed to set locale, defaulting to C.UTF-8” in CentOS 8<a class="headerlink" href="#failed-to-set-locale-defaulting-to-c-utf-8-in-centos-8" title="永久链接至标题">¶</a></h4>
+<p>解决办法</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dnf</span> <span class="n">install</span> <span class="n">langpacks</span><span class="o">-</span><span class="n">en</span> <span class="n">glibc</span><span class="o">-</span><span class="nb">all</span><span class="o">-</span><span class="n">langpacks</span> <span class="o">-</span><span class="n">y</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../wiki/contribute.html" class="btn btn-neutral float-right" title="1. 如何参与贡献" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="hadoop.html" class="btn btn-neutral" title="1. Apache Hadoop" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, TBD
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
