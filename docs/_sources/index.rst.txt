@@ -6,6 +6,10 @@
 这些软件可以在Kunpeng运行
 ======================================
 
+这些软件可以在Kunpeng上运行。 工程记录了一些热心工程在Kunpeng上运行的软件，旨在帮助使用Kunpeng平台的人快速确认哪些软件可以在Kunpeng上运行。
+
+github项目地址： `RunKunpeng <|runkunpeng_url|>`_
+
 .. toctree::
    :maxdepth: 2
    :caption: 软件列表:
@@ -29,3 +33,6 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+
+.. |runkunpeng_url| replace:: https://github.com/LyleLee/RunKunpeng
