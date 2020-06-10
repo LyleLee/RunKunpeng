@@ -18,9 +18,9 @@
 
 2. 添加文件到source/apps下
 
-    + 文件以软件的小写名字命名，名字最好和官网地址url中的名字一样
-    + 文件使用restructuredText语法编写， 和markdown基本一样，了解 `restructuredText <|restructuredText|>`_  
     + 复制source/apps下的随意一个文件进行修改更加方便。
+    + 文件以软件的小写名字命名，名字最好和官网地址url中的名字一样
+    + 文件使用restructuredText语法编写， 和markdown基本一样，了解 `restructuredText <|restructuredText|>`_
 
     .. caution:: 如果是商用软件，请从合法渠道获取版权许可。
 

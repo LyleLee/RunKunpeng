@@ -6,7 +6,7 @@ The Kubernetes
 
 :Name: kubenetes, k8s
 :Website: https://kubernetes.io/
-:Project: Github https://github.com/kubernetes
+:Project: https://github.com/kubernetes
 :License: Apache License 2.0
 
 -----------------------------------------------------------------------

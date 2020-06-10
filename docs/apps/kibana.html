@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>56. kibana &mdash; RunKunpeng 0.0.1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="57. Kubernetes" href="kubenetes.html" />
+    <link rel="prev" title="55. kaldi" href="kaldi.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> RunKunpeng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">软件列表:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ambari.html">1. Apache Ambari</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ambassador.html">2. Apache Ambari</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anaconda.html">3. Anaconda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ansible.html">4. Ansible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ant.html">5. Ant</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arangodb.html">6. Arangodb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bazel.html">7. Bazel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="benchmarksql.html">8. Benchmarksql</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bison.html">9. Bison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="blas.html">10. Blas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bs4.html">11. bs4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c-ares.html">12. c-ares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cfssl.html">13. CFSSL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chrome.html">14. Google Chrome</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clang.html">15. Clang</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cloc.html">16. cloc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmake.html">17. Cmake</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conda.html">18. CONDA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confuse.html">19. confuse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="consul.html">20. consul</a></li>
+<li class="toctree-l1"><a class="reference internal" href="createrepo.html">21. createrepo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cython.html">22. cython</a></li>
+<li class="toctree-l1"><a class="reference internal" href="django.html">23. django</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dm.html">24. DM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docker.html">25. Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dubbo.html">26. Dubbo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="elasticjob.html">27. Elastic Job</a></li>
+<li class="toctree-l1"><a class="reference internal" href="elasticsearch.html">28. Elastic Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="emqx.html">29. EMQ X</a></li>
+<li class="toctree-l1"><a class="reference internal" href="esrally.html">30. esrally</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fastdfs.html">31. Fastdfs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ffmpeg.html">32. FFmpeg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fio.html">33. Fio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flume.html">34. Apache Flume</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ganglia.html">35. Ganglia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gcc.html">36. GCC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gensim.html">37. Gensim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gitlab.html">38. Gitlab</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gluster.html">39. GLUSTER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="golang.html">40. Golang</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grafana.html">41. Grafana</a></li>
+<li class="toctree-l1"><a class="reference internal" href="greenplum.html">42. Greenplum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hadoop.html">43. Apache Hadoop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hbase.html">44. Apache HBase</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hibench.html">45. HiBench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hive.html">46. Apache Hive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="httpd.html">47. httpd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hue.html">48. hue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="impala.html">49. Impala</a></li>
+<li class="toctree-l1"><a class="reference internal" href="influxdb.html">50. InfluxDB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iozone.html">51. IOzone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jieba.html">52. jieba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jstorm.html">53. jstorm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kafka.html">54. kafka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kaldi.html">55. kaldi</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">56. kibana</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#runby-chenhai-chenhai-github-com">56.1. RunBy: chenhai &lt;chenhai&#64;github.com&gt;</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="kubenetes.html">57. Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kudu.html">58. kudu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="monggodb.html">59. monggoDB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="moosefs.html">60. MyBatis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mysql.html">61. MySQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="neo4j.html">62. neo4j</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nfs-ganesha.html">63. NFS-Ganesha</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nginx.html">64. Nginx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="openblas.html">65. Open BLAS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="openjdk.html">66. OpenJDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="openshift.html">67. OpenShift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pillow.html">68. Pillow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pycharm.html">69. PyCharm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tbase.html">70. TBase</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tensorflow.html">71. TensorFlow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tidb.html">72. TiDB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="winscp.html">73. WinSCP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zookeeper.html">74. ZooKeeper</a></li>
+</ul>
+<p class="caption"><span class="caption-text">你可能想要知道:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../wiki/contribute.html">1. 如何参与贡献</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">RunKunpeng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>56. kibana</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/apps/kibana.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="kibana">
+<h1>56. kibana<a class="headerlink" href="#kibana" title="永久链接至标题">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body">kibana</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Website:</th><td class="field-body"><a class="reference external" href="https://www.elastic.co/cn/kibana">https://www.elastic.co/cn/kibana</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Project:</th><td class="field-body"><a class="reference external" href="https://github.com/elastic/kibana">https://github.com/elastic/kibana</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">License:</th><td class="field-body">Elastic License</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<div class="section" id="runby-chenhai-chenhai-github-com">
+<h2>56.1. RunBy: chenhai &lt;<a class="reference external" href="mailto:chenhai&#37;&#52;&#48;github&#46;com">chenhai<span>&#64;</span>github<span>&#46;</span>com</a>&gt;<a class="headerlink" href="#runby-chenhai-chenhai-github-com" title="永久链接至标题">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Run Version:</th><td class="field-body">6.5, 6.3.1</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Pass:</th><td class="field-body">Yes</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="kubenetes.html" class="btn btn-neutral float-right" title="57. Kubernetes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="kaldi.html" class="btn btn-neutral" title="55. kaldi" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, TBD
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
