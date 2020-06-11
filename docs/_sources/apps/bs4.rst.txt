@@ -1,13 +1,13 @@
 ##########################
-bs4
+beautifulsoup4
 ##########################
 
 
 
-:Name: bs4
-:Website: https://
-:Project: https://
-:License: GNU General Public License, GPL？
+:Name: beautifulsoup4
+:Website: https://pypi.org/project/bs4/
+:Project: https://pypi.org/project/bs4/
+:License: MIT License
 
 -----------------------------------------------------------------------
 

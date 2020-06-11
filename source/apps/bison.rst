@@ -5,9 +5,9 @@ Bison
 
 
 :Name: Bison
-:Website: https://
-:Project: https://
-:License: GNU General Public License, GPL？
+:Website: https://www.gnu.org/software/bison/
+:Project:
+:License: GNU GPL
 
 -----------------------------------------------------------------------
 

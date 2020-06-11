@@ -19,3 +19,12 @@ RunBy: Lyle
 :Run Version: 0.3.8, 0.3.6, 0.3.3
 :Pass: Yes
 
+RunBy: zhangx <zhangx@github.com>
+====================================
+
+:Run Version: 0.3.3
+:Pass: Yes
+
+::
+
+    yum install blas

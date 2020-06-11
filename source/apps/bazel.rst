@@ -2,12 +2,12 @@
 Bazel
 ##########################
 
-自动话运维工具
+a fast, scalable, multi-language and extensible build system
 
 :Name: Bazel
-:Website: https://
-:Project: github https://
-:License: MIT?
+:Website: https://bazel.build/
+:Project: https://github.com/bazelbuild/bazel
+:License: Apache License 2.0
 
 -----------------------------------------------------------------------
 
