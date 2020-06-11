@@ -3,4 +3,8 @@
     "restructuredtext.builtDocumentationPath": "${workspaceFolder}\\build\\html",
     "restructuredtext.updateOnTextChanged": "true",
     "restructuredtext.updateDelay": 1000,
+    "search.exclude": {
+        "**/build": true,
+        "**/docs": true,
+      },
 }
