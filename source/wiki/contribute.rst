@@ -44,5 +44,3 @@
 
     在自己的工程上创建pull request， 填写必要信息。 收到pull request之后会审核然后合入
 
-.. |runkunpeng_url| replace:: https://github.com/LyleLee/RunKunpeng
-.. |restructuredText| replace:: https://learn-rst.readthedocs.io/zh_CN/
