@@ -1,5 +1,5 @@
 ##########################
-Apache Hive
+Apache Hive ⚑
 ##########################
 
 The Apache Hive ™ data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL

@@ -1,5 +1,5 @@
 ##########################
-HiBench
+HiBench ⚑
 ##########################
 
 HiBench is a big data benchmark suite.
