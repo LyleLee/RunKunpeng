@@ -1,5 +1,5 @@
 ##########################
-Bazel
+Bazel ⚑
 ##########################
 
 a fast, scalable, multi-language and extensible build system

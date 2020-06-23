@@ -1,5 +1,5 @@
 ##########################
-Google Chrome
+Google Chrome ⚑
 ##########################
 
 Browser

@@ -1,5 +1,5 @@
 ##########################
-Benchmarksql
+Benchmarksql ⚑
 ##########################
 
 数据库benchmark工具
