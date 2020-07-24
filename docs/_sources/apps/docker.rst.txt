@@ -1,5 +1,5 @@
 ##########################
-Docker ⚑
+Docker
 ##########################
 
 Docker provides a simple and powerful developer experience, workflows and collaboration for creating applications.
