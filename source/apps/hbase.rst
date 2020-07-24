@@ -1,5 +1,5 @@
 ##########################
-Apache HBase ⚑
+Apache HBase
 ##########################
 
 Apache HBase™ is the Hadoop database, a distributed, scalable, big data store.

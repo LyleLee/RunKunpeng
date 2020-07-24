@@ -1,5 +1,5 @@
 ##########################
-GCC ⚑
+GCC
 ##########################
 
 GCC, the GNU Compiler Collection

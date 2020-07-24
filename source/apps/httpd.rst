@@ -1,5 +1,5 @@
 ##########################
-httpd ⚑
+httpd
 ##########################
 
 The Apache HTTP Server Project is an effort to develop and maintain an open-source HTTP server for modern operating systems including UNIX and Windows.

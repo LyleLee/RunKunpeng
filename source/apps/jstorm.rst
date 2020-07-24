@@ -1,5 +1,5 @@
 ##########################
-jstorm ⚑
+jstorm
 ##########################
 
 Enterprise Stream Process Engine

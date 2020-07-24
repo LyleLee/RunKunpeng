@@ -1,5 +1,5 @@
 ##########################
-Clang ⚑
+Clang
 ##########################
 
 Clang: a C language family frontend for LLVM

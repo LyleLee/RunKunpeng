@@ -1,5 +1,5 @@
 ##########################
-NFS-Ganesha ⚑
+NFS-Ganesha
 ##########################
 
 NFS-Ganesha is an NFSv3,v4,v4.1 fileserver that runs in user mode on most UNIX/Linux systems. It also supports the 9p.2000L protocol.

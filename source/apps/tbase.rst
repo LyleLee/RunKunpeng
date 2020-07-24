@@ -1,5 +1,5 @@
 ##########################
-TBase ⚑
+TBase
 ##########################
 
 TBase is an enterprise-level distributed HTAP database. Through a single database cluster to provide users with highly consistent

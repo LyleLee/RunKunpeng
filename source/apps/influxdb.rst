@@ -1,5 +1,5 @@
 ##########################
-InfluxDB ⚑
+InfluxDB
 ##########################
 
 InfluxDB: Purpose-Built Open Source Time Series Database

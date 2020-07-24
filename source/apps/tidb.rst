@@ -1,5 +1,5 @@
 ##########################
-TiDB ⚑
+TiDB
 ##########################
 
 TiDB is an open source distributed HTAP database compatible with the MySQL protocol.

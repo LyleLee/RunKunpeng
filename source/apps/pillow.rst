@@ -1,5 +1,5 @@
 ##########################
-Pillow ⚑
+Pillow
 ##########################
 
 The friendly PIL fork (Python Imaging Library)

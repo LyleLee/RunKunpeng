@@ -1,5 +1,5 @@
 ##########################
-IOzone ⚑
+IOzone
 ##########################
 
 IOzone Filesystem Benchmark
