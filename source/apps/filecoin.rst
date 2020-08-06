@@ -12,6 +12,8 @@ Filecoin, ipfs based blockchain application
 -----------------------------------------------------------------------
 
 ff: |filecoin|
+rust-fil-proofs: |rust-fil-proofs|
+
 
 
 RunBy: Lyle
@@ -24,4 +26,4 @@ RunBy: Lyle
 
 
 .. |filecoin| image:: https://travis-ci.org/LyleLee/ff.svg?branch=master
-
+.. |rust-fil-proofs| image:: https://travis-ci.org/LyleLee/rust-fil-proofs.svg?branch=master
