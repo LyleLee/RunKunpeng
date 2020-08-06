@@ -20,13 +20,19 @@ github address： `RunKunpeng <https://github.com/LyleLee/RunKunpeng>`_
    apps/*
 
 
-Filecoin |filecoin|
-----------------------
+Filecoin |lotus|
+-----------------------------
 
-ff: |filecoin|
+===================   ======================
+ff                      |filecoin|
+===================   ======================
+rust-fil-proofs         |rust-fil-proofs|
+===================   ======================
+
 
 .. |filecoin| image:: https://travis-ci.org/LyleLee/ff.svg?branch=master
-
+.. |rust-fil-proofs| image:: https://travis-ci.org/LyleLee/rust-fil-proofs.svg?branch=master
+.. |lotus| image:: https://travis-ci.org/LyleLee/lotus.svg?branch=setup-travis
 
 .. toctree::
    :maxdepth: 2
@@ -34,7 +40,6 @@ ff: |filecoin|
    :numbered:
    :glob:
 
-   wiki/*
 
 
 Indices and tables
