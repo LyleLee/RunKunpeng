@@ -30,9 +30,9 @@ rust-fil-proofs         |rust-fil-proofs|
 ===================   ======================
 
 
-.. |filecoin| image:: https://travis-ci.org/LyleLee/ff.svg?branch=master
+.. |filecoin| image:: https://travis-ci.org/LyleLee/lotus.svg?branch=test-ntwk-calibration
 .. |rust-fil-proofs| image:: https://travis-ci.org/LyleLee/rust-fil-proofs.svg?branch=master
-.. |lotus| image:: https://travis-ci.org/LyleLee/lotus.svg?branch=setup-travis
+.. |lotus| image:: https://travis-ci.org/LyleLee/lotus.svg?branch=test-ntwk-calibration
 
 .. toctree::
    :maxdepth: 2
